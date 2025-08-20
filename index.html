@@ -1,0 +1,501 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Orlick</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body"> 
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="index.html">
+                    <img src="img/logo.svg" alt="">
+                    <img class="header__logo-mobile" src="img/logo-mobile.svg" alt="">
+                </a>
+                <nav class="header__menu">
+                    <ul>
+                        <li>
+                            <a href="about-us.html">O projektu</a>
+                        </li>
+                        <li>
+                            <a href="lands.html">Pozemky</a>
+                        </li>
+                        <li>
+                            <a href="#">Ceník</a>
+                        </li>
+                        <li>
+                            <a href="bungalov.html">Bungalovy</a>
+                        </li>
+                        <li>
+                            <a href="about.html">O nás</a>
+                        </li>
+                        <li>
+                            <a href="#">Galerie</a>
+                        </li>
+                        <li>
+                            <a href="#">Kontakt</a>
+                        </li>
+                        <li>
+                            <a href="#">en</a>
+                        </li>
+                    </ul>
+                    <div class="header__menu-bottom">
+                        <div class="header__menu-lang">
+                            <a href="#">cz</a>
+                            <a class="active" href="#">en</a>
+                        </div>
+                        <div class="header__menu-links">
+                            <a class="header__menu-link" href="tel:+420221907217">Tel: +420 221 907 217</a>
+                            <a class="header__menu-link" href="mailto:office@spgroup.cz">office@spgroup.cz</a>
+                        </div>
+                    </div>
+                </nav>
+                <button class="header__burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="22" viewBox="0 0 34 22" fill="none">
+                        <line x1="1" y1="1" x2="33" y2="1" stroke="#21565E" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="1" y1="11" x2="33" y2="11" stroke="#21565E" stroke-width="2" stroke-linecap="round"/>
+                        <line x1="1" y1="21" x2="33" y2="21" stroke="#21565E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
+                        <path d="M2.41421 1L25 23.5858M23.5858 1L1 23.5858" stroke="#21565E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <h1 class="hero__title"><span>Jedinečný projekt <br>u Orlické přehrady.</span> <br><strong>Váš nový klid uprostřed přírody.</strong></h1>
+                </div>
+            </div>
+            <div class="hero__bottom">
+                <div class="hero__cloud">
+                    <img src="img/hero/cloud-1.png" alt="">
+                </div>
+                <div class="hero__cloud">
+                    <img src="img/hero/cloud-2.png" alt="">
+                </div>
+                <div class="hero__cloud">
+                    <img src="img/hero/cloud-3.png" alt="">
+                </div>
+                <div class="hero__content">
+                    <div class="hero__block">
+                        <div class="hero__area">
+                            <img src="img/hero/area.svg" alt="">
+                        </div>
+                        <a class="hero__btn" href="lands.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="35" viewBox="0 0 29 35" fill="none">
+                                <path d="M15.1503 5.07338C19.0389 5.23451 22.4327 7.46302 24.6363 10.6706C25.2944 9.78165 27.5684 7.54358 28.4719 9.18355C29.3104 10.7047 26.4208 11.7234 25.366 11.9036C26.9475 15.4772 26.9899 19.4576 25.3634 23.0257C26.3372 23.3534 29.3329 24.1836 28.5329 25.743C27.7329 27.3024 25.232 25.2992 24.6377 24.327C22.4526 27.5769 19.0416 29.7262 15.1516 29.9269C15.6319 30.8923 16.2064 34.1668 14.5546 34.1655C12.8193 34.1655 13.2664 30.9661 13.8249 29.9269C9.93633 29.7658 6.54259 27.5373 4.33892 24.3297C3.61719 25.1832 1.47719 27.4636 0.502059 25.8181C-0.388167 24.3147 2.56377 23.2469 3.60923 23.0967C2.03707 19.53 1.96543 15.5318 3.61188 11.9733C3.61984 11.7821 0.955795 11.4366 0.438376 10.179C0.158439 9.49899 0.454297 8.76571 1.18797 8.64964C2.23608 8.48442 3.77772 9.82124 4.33759 10.6706C6.50943 7.42752 9.95358 5.25909 13.8236 5.07065C13.2942 4.10797 12.7636 0.457979 14.6555 0.862169C16.1653 1.18579 15.6505 4.03833 15.1503 5.07065V5.07338ZM13.8223 7.39611C10.8518 7.72519 8.05505 9.2409 6.39665 11.834C7.21524 12.2655 8.13598 12.4376 8.95721 12.8813C9.92306 13.4043 10.6674 14.2154 11.5218 14.8941C12.2554 14.3875 12.8312 13.6255 13.8249 13.6761C13.277 11.55 13.3035 9.52083 13.8236 7.39611H13.8223ZM22.5799 12.0375C22.7259 11.8913 21.8157 10.7798 21.6552 10.6009C19.9464 8.7029 17.6273 7.70335 15.1516 7.39611C15.6346 9.51264 15.7288 11.5623 15.149 13.6761C16.1069 13.6638 16.7437 14.3834 17.4522 14.8941C18.9368 13.5108 20.5288 12.2942 22.5799 12.0375ZM10.9062 16.1367C9.98409 15.8472 9.00896 15.5523 8.16384 15.0648C7.31872 14.5773 6.69782 13.8017 5.93098 13.2664C5.82086 13.1899 5.80494 13.0725 5.60062 13.1312C4.39729 15.9961 4.41454 19.0015 5.60062 21.8691C5.74258 21.9742 6.95122 20.7699 7.20197 20.5842C8.34693 19.7375 9.53832 19.2186 10.9062 18.8636C10.5373 17.9979 10.536 17.0038 10.9062 16.1367ZM23.3746 13.1312C23.2101 13.0083 22.0824 14.1827 21.8476 14.3575C20.6748 15.2327 19.5258 15.7407 18.1248 16.1299C18.365 17.0475 18.4737 17.9678 18.0678 18.865C20.1746 19.3142 21.6977 20.5131 23.3083 21.8718C24.6337 19.1149 24.5236 15.9319 23.3746 13.1312ZM14.0545 15.4854C11.6624 15.8855 12.0922 19.9874 14.9195 19.5163C17.2744 19.1231 16.9056 15.0088 14.0545 15.4854ZM13.8249 21.3243C12.867 21.3365 12.2302 20.6169 11.5218 20.1062C9.98542 21.7039 8.63084 22.3156 6.5877 22.9601C6.44176 23.0066 6.35022 22.8645 6.39665 23.165C8.07362 25.7854 10.8199 27.2656 13.8236 27.6056C13.3394 25.5 13.2332 23.4244 13.8263 21.3256L13.8249 21.3243ZM15.1516 27.6042C18.1248 27.2574 20.9189 25.7703 22.5773 23.1663C21.7189 22.7416 20.7902 22.5273 19.9437 22.0575C18.9633 21.5127 18.3305 20.7712 17.4482 20.1131C16.7185 20.6128 16.1361 21.3775 15.1503 21.3243C15.6983 23.4503 15.6717 25.4795 15.1516 27.6042Z" fill="#EF813A"/>
+                            </svg>
+                        </a>
+                        <div class="hero__block-image">
+                            <img src="img/hero/area-image.png" alt="">
+                            <h3 class="hero__block-title">Pozemky <br>k prodeji</h3>
+                        </div>
+                    </div>
+                    <div class="hero__bg">
+                        <img src="img/hero/bg-1.png" alt="">
+                    </div>
+                    <div class="hero__bg-second">
+                        <img src="img/hero/bg-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="textBanner">
+            <div class="container">
+                <div class="textBanner__inner">
+                    <h2 class="textBanner__title">
+                        <strong>Postavíte si vlastní nebo rovnou bydlíte?</strong> <br>
+                        Pozemek nabízíme prázdný i s elegantním 
+                        <strong class="animate-vertical-wrapper">
+                            <span class="animate-vertical">
+                            <span>bungalovem+</span>
+                            <span>chatičkou</span>
+                            <span>domkem</span>
+                            </span>
+                        </strong>. Vaše volba, váš klid.
+                    </h2>
+                    <a class="textBanner__btn btn" href="#">Nabídka pozemků <span class="btn-icon"></span></a>
+                </div>
+            </div>
+            <div class="textBanner__images">
+                <div class="textBanner__image">
+                    <img src="img/textBanner/1.png" alt="">
+                </div>
+                <div class="textBanner__bottom">
+                    <img src="img/textBanner/2.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="textBlock">
+            <div class="container">
+                <div class="textBlock__inner">
+                    <div class="textBlock__content">
+                        <h2 class="textBlock__title title">Obklopeni přírodou. <strong>Nespočet aktivit.</strong></h2>
+                        <p class="textBlock__descr">Orlík nabízí víc než jen krásné výhledy – nabízí klid, prostor a propojení s přírodou. Ať už si chcete odpočinout, sportovat nebo jen dýchat čistý vzduch, tady to najdete.</p>
+                    </div>
+                    <div class="textBlock__image">
+                        <img src="img/textBlock/1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sliderImages">
+            <div class="sliderImages__inner">
+                <div class="sliderImages__slider">
+                    <div class="swiper-wrapper">
+                        <div class="sliderImages__slide swiper-slide">
+                            <img src="img/sliderImages/1.png" alt="">
+                        </div>
+                        <div class="sliderImages__slide swiper-slide">
+                            <img src="img/sliderImages/2.png" alt="">
+                        </div>
+                        <div class="sliderImages__slide swiper-slide">
+                            <img src="img/sliderImages/3.png" alt="">
+                        </div>
+                        <div class="sliderImages__slide swiper-slide">
+                            <img src="img/sliderImages/4.png" alt="">
+                        </div>
+                        <div class="sliderImages__slide swiper-slide">
+                            <img src="img/sliderImages/5.png" alt="">
+                        </div>
+                        <div class="sliderImages__slide swiper-slide">
+                            <img src="img/sliderImages/6.png" alt="">
+                        </div>
+                        <div class="sliderImages__slide swiper-slide">
+                            <img src="img/sliderImages/7.png" alt="">
+                        </div>
+                        <div class="sliderImages__slide swiper-slide">
+                            <img src="img/sliderImages/8.png" alt="">
+                        </div>
+                        <div class="sliderImages__slide swiper-slide">
+                            <img src="img/sliderImages/1.png" alt="">
+                        </div>
+                        <div class="sliderImages__slide swiper-slide">
+                            <img src="img/sliderImages/2.png" alt="">
+                        </div>
+                        <div class="sliderImages__slide swiper-slide">
+                            <img src="img/sliderImages/3.png" alt="">
+                        </div>
+                        <div class="sliderImages__slide swiper-slide">
+                            <img src="img/sliderImages/4.png" alt="">
+                        </div>
+                        <div class="sliderImages__slide swiper-slide">
+                            <img src="img/sliderImages/5.png" alt="">
+                        </div>
+                        <div class="sliderImages__slide swiper-slide">
+                            <img src="img/sliderImages/6.png" alt="">
+                        </div>
+                        <div class="sliderImages__slide swiper-slide">
+                            <img src="img/sliderImages/7.png" alt="">
+                        </div>
+                        <div class="sliderImages__slide swiper-slide">
+                            <img src="img/sliderImages/8.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bannerInfo">
+            <div class="container">
+                <div class="bannerInfo__inner">
+                    <h3 class="bannerInfo__title">
+                        Ráno s výhledem na vodní hladinu. Dopoledne na kole. Odpoledne
+                        <br><strong class="animate-horizontal-wrapper">
+                            <span class="animate-horizontal">
+                                <span>paddleboard</span>
+                                <span>lodičku</span>
+                                <span>kolo</span>
+                                <span>brusle</span>
+                                <span>wing foil</span>
+                                <span>paddleboard</span>
+                            </span>
+                        </strong>
+                        ,večer víno na terase.
+                    </h3>
+                    <span class="bannerInfo-line"></span>
+                    <h2 class="bannerInfo__name">V okolí Orlíku se žije jinak – klidně, zdravě, autenticky.</h2>
+                    <a class="bannerInfo__btn btn" href="#">Více o projektu <span class="btn-icon"></span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="textBlock textBlock-second">
+            <div class="container">
+                <div class="textBlock__inner">
+                    <div class="textBlock__content">
+                        <h2 class="textBlock__title title"><strong>Lokalita spojuje</strong> výjimečnou dostupnost <br>s rekreačním charakterem. </h2>
+                        <p class="textBlock__descr">Přírodní prostředí, lesy, cyklostezky a Orlická přehrada tvoří z této oblasti ideální místo pro relax a odpočinek.</p>
+                    </div>
+                    <div class="textBlock__image">
+                        <img src="img/textBlock/2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mapBlock">
+            <div class="mapBlock__inner">
+                <div class="mapBlock__content">
+                    <div id="map"></div>
+                    <div id="arrows-container"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="videoloop">
+            <div class="videoloop__inner">
+                <video class="videoloop__video" autoplay playsinline muted loop>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <section class="bannerBlock">
+            <div class="container">
+                <div class="bannerBlock__inner">
+                    <h2 class="bannerBlock__title title">Kdo stojí za projektem.</h2>
+                    <div class="bannerBlock__contnt">
+                        <p class="bannerBlock__descr">Projekt Orlík Apartments realizuje zkušený tým ze skupiny SPGroup a.s., která dlouhodobě působí v oblasti realitního developmentu a investic. Společnost má stabilní zázemí, know-how i kapitál pro realizaci kvalitních projektů s dlouhodobou hodnotou.</p>
+                        <a class="bannerBlock__btn btn" href="#">Více o SPGroup <span class="btn-icon"></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section class="imagine">
+            <div class="container">
+                <div class="imagine__inner">
+                    <h2 class="imagine__title title"><strong>Představte si</strong> život na Orlíku</h2>
+                    <div class="imagine__content">
+                        <div class="imagine__small">
+                            <div class="imagine__image">
+                                <img src="img/imagine/1.png" alt="">
+                            </div>
+                            <div class="imagine__image">
+                                <img src="img/imagine/2.png" alt="">
+                            </div>
+                            <div class="imagine__image">
+                                <img src="img/imagine/3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="imagine__large">
+                            <div class="imagine__image">
+                                <img src="img/imagine/4.png" alt="">
+                            </div>
+                            <div class="imagine__image">
+                                <img src="img/imagine/5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="imagine__small">
+                            <div class="imagine__image">
+                                <img src="img/imagine/6.png" alt="">
+                            </div>
+                            <div class="imagine__image">
+                                <img src="img/imagine/7.png" alt="">
+                            </div>
+                            <div class="imagine__image">
+                                <img src="img/imagine/8.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imagine__mobile">
+                        <div class="imagine__small">
+                            <div class="imagine__image">
+                                <img src="img/imagine/1.png" alt="">
+                            </div>
+                            <div class="imagine__image">
+                                <img src="img/imagine/2.png" alt="">
+                            </div>
+                            <div class="imagine__image">
+                                <img src="img/imagine/4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="imagine__large">
+                            <div class="imagine__image">
+                                <img src="img/imagine/4.png" alt="">
+                            </div>
+                            <div class="imagine__image">
+                                <img src="img/imagine/6.png" alt="">
+                            </div>
+                            <div class="imagine__image">
+                                <img src="img/imagine/7.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__logo" href="index.html">
+                        <img src="img/footer-logo.svg" alt="">
+                        <img class="footer__logo-mobile" src="img/footer-logo-mobile.svg" alt="">
+                    </a>
+                    <div class="footer__info">
+                        <a class="footer__info-link" href="tel:+420221907217">Tel: +420 221 907 217</a>
+                        <a class="footer__info-link" href="mailto:office@spgroup.cz">office@spgroup.cz</a>
+                    </div>
+                    <div class="footer__socials">
+                        <a href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                <path d="M3.80527 17H0.280804V5.64997H3.80527V17ZM2.04114 4.10172C0.914129 4.10172 0 3.16822 0 2.04118C8.06665e-09 1.49983 0.215048 0.980645 0.597836 0.597849C0.980623 0.215053 1.49979 0 2.04114 0C2.58248 0 3.10165 0.215053 3.48444 0.597849C3.86723 0.980645 4.08228 1.49983 4.08228 2.04118C4.08228 3.16822 3.16777 4.10172 2.04114 4.10172ZM16.9962 17H13.4793V11.4749C13.4793 10.1581 13.4528 8.46945 11.6469 8.46945C9.81446 8.46945 9.53366 9.90006 9.53366 11.38V17H6.01299V5.64997H9.39326V7.19822H9.44259C9.91312 6.30646 11.0625 5.36537 12.7773 5.36537C16.3443 5.36537 17 7.7143 17 10.7653V17H16.9962Z" fill="#53535A"/>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                <path d="M9.50212 4.62864C6.8063 4.62864 4.63185 6.80358 4.63185 9.5C4.63185 12.1964 6.8063 14.3714 9.50212 14.3714C12.1979 14.3714 14.3724 12.1964 14.3724 9.5C14.3724 6.80358 12.1979 4.62864 9.50212 4.62864ZM9.50212 12.667C7.76001 12.667 6.33581 11.2467 6.33581 9.5C6.33581 7.75326 7.75577 6.33298 9.50212 6.33298C11.2485 6.33298 12.6684 7.75326 12.6684 9.5C12.6684 11.2467 11.2442 12.667 9.50212 12.667ZM15.7076 4.42938C15.7076 5.06108 15.1989 5.5656 14.5716 5.5656C13.94 5.5656 13.4356 5.05684 13.4356 4.42938C13.4356 3.80191 13.9443 3.29315 14.5716 3.29315C15.1989 3.29315 15.7076 3.80191 15.7076 4.42938ZM18.9332 5.58256C18.8612 4.06053 18.5136 2.71232 17.3988 1.60153C16.2883 0.49074 14.9404 0.143088 13.4187 0.0667745C11.8504 -0.0222582 7.14964 -0.0222582 5.58132 0.0667745C4.06386 0.138849 2.71595 0.4865 1.60117 1.59729C0.486392 2.70808 0.143056 4.05629 0.0667596 5.57832C-0.0222532 7.14699 -0.0222532 11.8488 0.0667596 13.4174C0.138818 14.9395 0.486392 16.2877 1.60117 17.3985C2.71595 18.5093 4.05962 18.8569 5.58132 18.9332C7.14964 19.0223 11.8504 19.0223 13.4187 18.9332C14.9404 18.8612 16.2883 18.5135 17.3988 17.3985C18.5094 16.2877 18.8569 14.9395 18.9332 13.4174C19.0223 11.8488 19.0223 7.15123 18.9332 5.58256ZM16.9071 15.1006C16.5765 15.9316 15.9365 16.5717 15.1015 16.9067C13.851 17.4027 10.8839 17.2882 9.50212 17.2882C8.1203 17.2882 5.14897 17.3985 3.90279 16.9067C3.072 16.576 2.43196 15.9358 2.0971 15.1006C1.60117 13.8499 1.71562 10.8821 1.71562 9.5C1.71562 8.11787 1.60541 5.14588 2.0971 3.89942C2.42772 3.06845 3.06776 2.42826 3.90279 2.09333C5.15321 1.59729 8.1203 1.71176 9.50212 1.71176C10.8839 1.71176 13.8553 1.60153 15.1015 2.09333C15.9322 2.42402 16.5723 3.06421 16.9071 3.89942C17.4031 5.15012 17.2886 8.11787 17.2886 9.5C17.2886 10.8821 17.4031 13.8541 16.9071 15.1006Z" fill="#53535A"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer__bottom">
+                        <p class="footer__descr">SPGroup a. s. 2025</p>
+                        <p class="footer__descr">Pacovská 2104/1, 140 00 Praha 4 – Krč</p>
+                        <a class="footer__descr" href="privacy.html">Ochrana os. údajů</a>
+                        <a class="footer__descr" href="terms.html">Obchodní podmínky</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+			const cities = [{
+				name: "Praha",
+				lat: 50.0755,
+				lng: 14.4378
+			}, {
+				name: "Příbram",
+				lat: 49.693,
+				lng: 14.0106
+			}, {
+				name: "Tábor",
+				lat: 49.4144,
+				lng: 14.6578
+			}];
+			let map;
+			let arrows = [];
+
+			function initMap() {
+				const orlik = {
+					lat: 49.55,
+					lng: 14.2
+				};
+				map = new google.maps.Map(document.getElementById("map"), {
+					zoom: 9,
+					center: orlik,
+					styles: [{
+						featureType: "water",
+						stylers: [{
+							color: "#9ad6e4"
+						}]
+					}, {
+						featureType: "landscape",
+						stylers: [{
+							color: "#f9f9f9"
+						}]
+					}]
+				});
+				const container = document.getElementById("arrows-container");
+				cities.forEach(city => {
+					const div = document.createElement("div");
+					div.className = "city-arrow";
+					div.innerHTML = `
+					<svg
+						xmlns="http://www.w3.org/2000/svg" width="27" height="24" viewBox="0 0 27 24" fill="none">
+						<path d="M1.90576 10.5977C1.06982 10.5977 0.39215 11.2754 0.39215 12.1113C0.39215 12.9473 1.06982 13.6249 1.90576 13.6249L1.90576 12.1113L1.90576 10.5977ZM26.376 13.1816C26.9672 12.5905 26.9672 11.6321 26.376 11.041L16.7435 1.40847C16.1524 0.817371 15.194 0.817371 14.6029 1.40847C14.0118 1.99958 14.0118 2.95794 14.6029 3.54904L23.1652 12.1113L14.6029 20.6736C14.0118 21.2647 14.0118 22.2231 14.6029 22.8142C15.194 23.4053 16.1524 23.4053 16.7435 22.8142L26.376 13.1816ZM1.90576 12.1113L1.90576 13.6249L25.3058 13.6249V12.1113V10.5977L1.90576 10.5977L1.90576 12.1113Z" fill="#21565E"/>
+					</svg>
+					<span>${city.name}</span>`;
+					container.appendChild(div);
+					arrows.push({
+						city,
+						div
+					});
+				});
+				google.maps.event.addListener(map, 'idle', updateArrows);
+				updateArrows();
+			}
+
+			function updateArrows() {
+                const container = document.getElementById("arrows-container");
+                const bounds = container.getBoundingClientRect();
+                const center = map.getCenter();
+                const centerX = bounds.width / 2;
+                const centerY = bounds.height / 2;
+                arrows.forEach(({ city, div }) => {
+                    const angle = bearing(center.lat(), center.lng(), city.lat, city.lng);
+                    const rad = angle * Math.PI / 180;
+                    const dist = haversine(center.lat(), center.lng(), city.lat, city.lng);
+                    const svg = div.querySelector("svg");
+                    svg.style.transform = `translateY(-50%) rotate(${angle - 90}deg)`;
+                    div.querySelector("span").textContent = `${city.name} ${dist.toFixed(0)} km`;
+                    const dx = Math.sin(rad);
+                    const dy = -Math.cos(rad); 
+
+                    let x, y;
+                    const ratioX = (centerX - 20) / Math.abs(dx);
+                    const ratioY = (centerY - 20) / Math.abs(dy);
+
+                    if (ratioX < ratioY) {
+                        x = centerX + dx * ratioX;
+                        y = centerY + dy * ratioX;
+                    } else {
+                        x = centerX + dx * ratioY;
+                        y = centerY + dy * ratioY;
+                    }
+
+                    div.style.left = `${x - div.offsetWidth / 2}px`;
+                    div.style.top = `${y - div.offsetHeight / 2}px`;
+                });
+            }
+
+			function bearing(lat1, lon1, lat2, lon2) {
+				const dLon = (lon2 - lon1) * Math.PI / 180;
+				lat1 = lat1 * Math.PI / 180;
+				lat2 = lat2 * Math.PI / 180;
+				const y = Math.sin(dLon) * Math.cos(lat2);
+				const x = Math.cos(lat1) * Math.sin(lat2) - Math.sin(lat1) * Math.cos(lat2) * Math.cos(dLon);
+				return (Math.atan2(y, x) * 180 / Math.PI + 360) % 360;
+			}
+
+			function haversine(lat1, lon1, lat2, lon2) {
+				const R = 6371;
+				const dLat = (lat2 - lat1) * Math.PI / 180;
+				const dLon = (lon2 - lon1) * Math.PI / 180;
+				lat1 = lat1 * Math.PI / 180;
+				lat2 = lat2 * Math.PI / 180;
+				const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.sin(dLon / 2) * Math.sin(dLon / 2) * Math.cos(lat1) * Math.cos(lat2);
+				return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+			}
+		</script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=API__HERE&callback=initMap" async defer></script>
+
+</body>
+</html>

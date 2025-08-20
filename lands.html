@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="cs">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Orlík Lake Resort spojuje výhody moderního bydlení s energií přírody.</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body class="body">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a class="header__logo" href="index.html">
+						<img src="img/logo.svg" alt="">
+						<img class="header__logo-mobile" src="img/logo-mobile.svg" alt="">
+					</a>
+					<nav class="header__menu">
+						<ul>
+                        <li>
+                            <a href="about-us.html">O projektu</a>
+                        </li>
+                        <li>
+                            <a class="active" href="lands.html">Pozemky</a>
+                        </li>
+                        <li>
+                            <a href="#">Ceník</a>
+                        </li>
+                        <li>
+                            <a href="bungalov.html">Bungalovy</a>
+                        </li>
+                        <li>
+                            <a href="about.html">O nás</a>
+                        </li>
+                        <li>
+                            <a href="#">Galerie</a>
+                        </li>
+                        <li>
+                            <a href="#">Kontakt</a>
+                        </li>
+                        <li>
+                            <a href="#">en</a>
+                        </li>
+                    </ul>
+						<div class="header__menu-bottom">
+							<div class="header__menu-lang">
+								<a href="#">cz</a>
+								<a class="active" href="#">en</a>
+							</div>
+							<div class="header__menu-links">
+								<a class="header__menu-link" href="tel:+420221907217">Tel: +420 221 907 217</a>
+								<a class="header__menu-link" href="mailto:office@spgroup.cz">office@spgroup.cz</a>
+							</div>
+						</div>
+					</nav>
+					<button class="header__burger">
+						<svg xmlns="http://www.w3.org/2000/svg" width="34" height="22" viewBox="0 0 34 22" fill="none">
+							<line x1="1" y1="1" x2="33" y2="1" stroke="#21565E" stroke-width="2" stroke-linecap="round" />
+							<line x1="1" y1="11" x2="33" y2="11" stroke="#21565E" stroke-width="2" stroke-linecap="round" />
+							<line x1="1" y1="21" x2="33" y2="21" stroke="#21565E" stroke-width="2" stroke-linecap="round" />
+						</svg>
+						<svg xmlns="http://www.w3.org/2000/svg" width="26" height="25" viewBox="0 0 26 25" fill="none">
+							<path d="M2.41421 1L25 23.5858M23.5858 1L1 23.5858" stroke="#21565E" stroke-width="2" stroke-linecap="round" />
+						</svg>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="lands">
+                <div class="lands__top">
+							<a class="lands__button" href="bungalov.html">
+								<div class="lands__button-content">
+									<h2 class="lands__button-title">Bungalov+ na klíč</h2>
+									<p class="lands__button-descr">Nechte si námi postavit na vybraném pozemku kvalitní dřevostavbu.</p>
+								</div>
+								<div class="lands__button-end">
+									<div class="lands__button-image">
+										<img src="img/lands/button-image.png" alt="">
+									</div>
+								</div>
+							</a>
+                            <div class="lands__selectmap">
+                                <button class="lands__selectmap-show">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" fill="none">
+                                        <circle cx="18.5" cy="18.5" r="18" fill="#E4D6CE" stroke="#EF813A"/>
+                                        <path d="M28.8731 18.4677C26.896 14.6101 22.9818 12 18.5 12C14.0182 12 10.1029 14.6119 8.12686 18.4681C8.04345 18.633 8 18.8153 8 19.0002C8 19.185 8.04345 19.3673 8.12686 19.5323C10.104 23.3899 14.0182 26 18.5 26C22.9818 26 26.8971 23.3881 28.8731 19.5319C28.9565 19.3669 29 19.1847 29 18.9998C29 18.815 28.9565 18.6327 28.8731 18.4677ZM18.5 24.25C17.4616 24.25 16.4466 23.9421 15.5833 23.3652C14.7199 22.7883 14.047 21.9684 13.6496 21.0091C13.2523 20.0498 13.1483 18.9942 13.3509 17.9758C13.5534 16.9574 14.0535 16.0219 14.7877 15.2877C15.5219 14.5535 16.4574 14.0534 17.4758 13.8509C18.4942 13.6483 19.5498 13.7523 20.5091 14.1496C21.4684 14.547 22.2883 15.2199 22.8652 16.0833C23.4421 16.9466 23.75 17.9616 23.75 19C23.7503 19.6895 23.6148 20.3724 23.3511 21.0095C23.0873 21.6466 22.7006 22.2255 22.2131 22.7131C21.7255 23.2006 21.1466 23.5873 20.5095 23.8511C19.8724 24.1148 19.1895 24.2503 18.5 24.25ZM18.5 15.5C18.1876 15.5044 17.8772 15.5508 17.5772 15.6382C17.8245 15.9742 17.9432 16.3877 17.9117 16.8037C17.8802 17.2197 17.7007 17.6107 17.4057 17.9057C17.1107 18.2007 16.7197 18.3802 16.3037 18.4117C15.8877 18.4432 15.4742 18.3245 15.1382 18.0772C14.9468 18.7822 14.9814 19.5294 15.2369 20.2137C15.4925 20.898 15.9562 21.4849 16.5628 21.8919C17.1694 22.2988 17.8884 22.5053 18.6185 22.4822C19.3486 22.4591 20.0531 22.2077 20.6328 21.7633C21.2125 21.3189 21.6382 20.7038 21.8501 20.0048C22.062 19.3057 22.0493 18.5578 21.8138 17.8664C21.5784 17.1749 21.132 16.5747 20.5375 16.1502C19.9431 15.7257 19.2305 15.4983 18.5 15.5Z" fill="#EF813A"/>
+                                    </svg>
+                                </button>
+                                <div class="lands__content">
+                                    <div class="lands__select">
+                                        <div class="lands__image">
+                                            <div class="lands__houses">
+                                                <img src="img/lands/houses.png" alt="">
+                                            </div>
+                                            <img src="img/lands/bg.png" alt="">
+                                        </div>
+                                        <div class="lands__select-block">
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ1</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.94vw" viewBox="0 0 244 64" fill="none">
+                                                        <path d="M84 9.5L29.5 0L26 3L22 7.5L15 16L0 29.5L5 37L16.5 37.5L103.5 49L140.5 55L172 60L201.5 64L243.5 18L84 9.5Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ1</h2>
+                                                    <p class="lands__select-avaliable">prodaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ2</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="17.24vw" viewBox="0 0 250 91" fill="none">
+                                                        <path d="M60 0.5L0 49.5L102 72L157.5 83.5L203 91L227.5 62L249.5 27.5L143.5 11L60 0.5Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ2</h2>
+                                                    <p class="lands__select-avaliable">prodaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ3</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ3</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18.72vw" viewBox="0 0 272 98" fill="none">
+                                                        <path d="M0.5 61.5L164.5 97.5L204 90.5L234.5 81.5L272 41L230 36L155.5 18.5L68.5 0.5L0.5 61.5Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ3</h2>
+                                                    <p class="lands__select-avaliable">prodaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ4</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24.14vw" viewBox="0 0 351 168" fill="none">
+                                                        <path d="M211.5 167.5L251 100L262 90.5L278.5 70L297.5 49.5L314.5 45.5L327 39L350.5 32.5L346 20L323 26.5L300 31.5L274.5 36.5L109 0L51.5 58L25.5 88L0.5 118L38 124L42.5 132.5L137.5 153L211.5 167.5Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ4</h2>
+                                                    <p class="lands__select-avaliable">prodaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ5</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12.03vw" viewBox="0 0 175 81" fill="none">
+                                                        <path d="M158 80.5L174.5 7.5L56 0.5L37.5 5.5L16.5 29L0 52.5L22.5 55L51 61.5L81.5 67.5L158 80.5Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ5</h2>
+                                                    <p class="lands__select-avaliable">prodaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ6</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="10.34vw" viewBox="0 0 150 100" fill="none">
+                                                        <path d="M148.5 8L16 0.5L7 37.5L0 73.5L68.5 85.5H73L123 94L133.5 97L146.5 99.5L148.5 64.5L150 36.5L148.5 8Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ6</h2>
+                                                    <p class="lands__select-avaliable">prodaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ7</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13.07vw" viewBox="0 0 190 108" fill="none">
+                                                        <path d="M0.5 91.5L100 107.5L147 94.5L190 80.5L97.5 11L78 4.5L2.5 0.5L3.5 45L0.5 91.5Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ7</h2>
+                                                    <p class="lands__select-avaliable">prodaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ8</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13.59vw" viewBox="0 0 197 176" fill="none">
+                                                        <path d="M62 15L17.5 27L8.5 69.5L0 140L109.5 164.5L135.5 170.5L163.5 175.5L197 158L180.5 112L170.5 58L160.5 46L143.5 31.5L107 0L62 15Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ8</h2>
+                                                    <p class="lands__select-avaliable">prodaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ9</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12.17vw" viewBox="0 0 177 137" fill="none">
+                                                        <path d="M0.5 98L160 136.5L168.5 67.5L177 24L66 6L56 3.5L34 0L5 83.5L0.5 98Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ9</h2>
+                                                    <p class="lands__select-avaliable">prodaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ10</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12.55vw" viewBox="0 0 182 121" fill="none">
+                                                        <path d="M0 84L148 120.5L165 71L182 22.5L137 15.5L89.5 6.5L48 0.5L0 84Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ10</h2>
+                                                    <p class="lands__select-avaliable">prodaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ11</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12vw" viewBox="0 0 174 107" fill="none">
+                                                        <path d="M62 1.5L46.5 0.5L25 32.5L0 63.5L11 81L124.5 106.5L156 55L174 22.5L120 13.5L62 1.5Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ11</h2>
+                                                    <p class="lands__select-avaliable">prodaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item lands-reserved">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ12</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="17.1vw" viewBox="0 0 249 188" fill="none">
+                                                        <path d="M189.5 14.5L136.5 0.5L114.5 7.5L100.5 14.5L86 17.5L66 39.5L55 53.5L40.5 67L20 101L0.5 135.5L34 146.5L56.5 150.5L155.5 187.5L182.5 122.5L248.5 28.5L189.5 14.5Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ12</h2>
+                                                    <p class="lands__select-avaliable">rezervovaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item lands-avaliable">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ13</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16.62vw" viewBox="0 0 242 226" fill="none">
+                                                        <path d="M27.5 97L0.5 161L81.5 191L167.5 226L193 151.5L241.5 37.5L161.5 17L92.5 0.5L27.5 97Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ13</h2>
+                                                    <p class="lands__select-avaliable">volný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ14</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="17.59vw" viewBox="0 0 256 251" fill="none">
+                                                        <path d="M255.5 46.5L74.5 0L24.5 118L0.5 189L19 201L53.5 221L89 241.5L109.5 250.5L126.5 241.5L186 205L232.5 187.5L255.5 46.5Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ14</h2>
+                                                    <p class="lands__select-avaliable">prodaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ15</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="19.17vw" viewBox="0 0 278 227" fill="none">
+                                                        <path d="M22 0L0 141L138 182.5L278 227L270.5 148.5L267.5 113L263 81.5L222 48L22 0Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ15</h2>
+                                                    <p class="lands__select-avaliable">prodaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ16</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="29vw" viewBox="0 0 421 303" fill="none">
+                                                        <path d="M420.5 302.5L403 87L123 0L74.5 17.5L38.5 40L0 63L56.5 256L209.5 272.5L386 296L420.5 302.5Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ16</h2>
+                                                    <p class="lands__select-avaliable">prodaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ17</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25.28vw" viewBox="0 0 367 242" fill="none">
+                                                        <path d="M306 61.5L150.5 0L0.5 241.5L145 239.5L147.5 207L367 205.5L346 106L306 61.5Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ17</h2>
+                                                    <p class="lands__select-avaliable">prodaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ18</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20.31vw" viewBox="0 0 295 304" fill="none">
+                                                        <path d="M144 303.5L294.5 62L216.5 31L137 0.5L69.5 151.5L0 302.5L144 303.5Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ18</h2>
+                                                    <p class="lands__select-avaliable">prodaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ19</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="22.41vw" viewBox="0 0 326 350" fill="none">
+                                                        <path d="M257 10.5L207.5 0.5L77 215L37.5 282.5L0.5 349.5L106.5 344.5L150.5 341.5L165.5 339.5L187.5 338.5L281 134L310.5 70L314 62.5L315.5 56.5L325.5 36L291 24L257 10.5Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ19</h2>
+                                                    <p class="lands__select-avaliable">prodaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">PZ20</p>
+                                                    <span class="lands__select-line"></span>
+                                                    <p class="lands__select-size">637 m2</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="27.79vw" viewBox="0 0 404 380" fill="none">
+                                                        <path d="M0.5 380L195 373L244.5 285.5L297 198.5L403.5 23L289 0.5L0.5 380Z" fill="#C7C7C7" fill-opacity="0.75" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <button class="lands__select-close"></button>
+                                                    <h2 class="lands__select-title">PZ20</h2>
+                                                    <p class="lands__select-avaliable">prodaný</p>
+                                                    <p class="lands__select-descr">Výměra pozemku: <span>524,5 m2</span></p>
+                                                    <p class="lands__select-descr">Užitná plocha domu: <span>498,8 m2</span></p>
+                                                    <p class="lands__select-descr">Cena: <span>6 366 600 Kč</span></p>
+                                                    <a class="lands__select-map" href="#">Karta pozemku</a>
+                                                    <button class="lands__select-details btn">Detail pozemku <span class="btn-icon"></span></button>
+                                                </div>
+                                            </div>
+                                            <div class="lands__select-item">
+                                                <div class="lands__select-info">
+                                                    <p class="lands__select-number">Rekreační zóna</p>
+                                                </div>
+                                                <div class="lands__select-bg">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32.03vw" viewBox="0 0 465 247" fill="none">
+                                                        <path opacity="0.9" d="M264.5 0.5L0 208L3 222L205 244C213.167 245.667 229.8 248 231 244C232.5 239 337 127 341.5 121.5C345.1 117.1 425 50.3333 464.5 17.5L264.5 0.5Z" fill="#DB934A" />
+                                                    </svg>
+                                                </div>
+                                                <div class="lands__select-content">
+                                                    <a class="lands__select-btn btn" href="#">Více informací <span class="btn-icon"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+				</div>
+				<div class="container">
+					<div class="lands__inner">
+						<div class="lands__table">
+							<div class="lands__table-top">
+								<h3 class="lands__table-name">Číslo</h3>
+								<h3 class="lands__table-name">Výměra pozemku (m2)</h3>
+								<h3 class="lands__table-name">Cena*</h3>
+								<h3 class="lands__table-name">Dostupnost</h3>
+								<h3 class="lands__table-name">Karta pozemku</h3>
+							</div>
+							<div class="lands__table-content">
+								<div class="lands__table-block lands-avaliable">
+									<div class="lands__table-item">
+										<p class="lands__table-name">PZ1</p>
+									</div>
+									<div class="lands__table-item">
+										<p class="lands__table-size">636,9</p>
+									</div>
+									<div class="lands__table-item">
+										<p class="lands__table-price">6 366 600 Kč</p>
+									</div>
+									<div class="lands__table-item">
+										<p class="lands__table-avaliable">volný</p>
+									</div>
+									<div class="lands__table-item">
+										<a class="lands__table-map" href="#"></a>
+									</div>
+								</div>
+								<div class="lands__table-block lands-sale">
+									<div class="lands__table-item">
+										<p class="lands__table-name">PZ2</p>
+									</div>
+									<div class="lands__table-item">
+										<p class="lands__table-size">643,9</p>
+									</div>
+									<div class="lands__table-item">
+										<p class="lands__table-price">8 366 600 Kč</p>
+									</div>
+									<div class="lands__table-item">
+										<p class="lands__table-avaliable">prodaný</p>
+									</div>
+									<div class="lands__table-item"></div>
+								</div>
+								<div class="lands__table-block lands-avaliable">
+									<div class="lands__table-item">
+										<p class="lands__table-name">PZ3</p>
+									</div>
+									<div class="lands__table-item">
+										<p class="lands__table-size">620,1</p>
+									</div>
+									<div class="lands__table-item">
+										<p class="lands__table-price">4 366 600 Kč</p>
+									</div>
+									<div class="lands__table-item">
+										<p class="lands__table-avaliable">volný</p>
+									</div>
+									<div class="lands__table-item">
+										<a class="lands__table-map" href="#"></a>
+									</div>
+								</div>
+								<div class="lands__table-block lands-reserved">
+									<div class="lands__table-item">
+										<p class="lands__table-name">PZ4</p>
+									</div>
+									<div class="lands__table-item">
+										<p class="lands__table-size">785,1</p>
+									</div>
+									<div class="lands__table-item">
+										<p class="lands__table-price">6 366 600 Kč</p>
+									</div>
+									<div class="lands__table-item">
+										<p class="lands__table-avaliable">rezervovaný</p>
+									</div>
+									<div class="lands__table-item">
+										<a class="lands__table-map" href="#"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p class="lands__descr">* Cena je uvedena včetně ceny za společný podíl příjezdových komunikací. V ceně nejsou zahrnuty inženýrské sítě.</p>
+						<p class="lands__descr">Ceník má pouze informativní charakter a není závaznou nabídkou (návrhem na uzavření smlouvy).</p>
+						<p class="lands__descr">Součástí nabízeného pozemku není oplocení, el. + vodovodní přípojka, ....... doplnit</p>
+					</div>
+				</div>
+			</section>
+
+            <section class="landsPopup">
+                <div class="container">
+                    <div class="landsPopup__inner">
+                        <button class="landsPopup__close">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+                                <circle cx="28.9912" cy="28.9914" r="20" transform="rotate(-135 28.9912 28.9914)" stroke="black" stroke-opacity="0.11"/>
+                                <path d="M35.6943 34.9898L23.6943 22.9898" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M23.6943 34.9827L35.6943 22.9827" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            Zavřít
+                        </button>
+                        <div class="landsPopup__top">
+                            <h2 class="landsPopup__title">Máte zájem o PZ12 ?</h2>
+                            <p class="landsPopup__descr">Vyplňte formulář a my se vám brzy ozveme zpět.</p>
+                        </div>
+                        <div class="landsPopup__buttons">
+                            <a class="landsPopup__btn btn-2" href="#">Poptat pozemek <span class="btn-icon"></span></a>
+                            <a class="landsPopup__btn btn" href="#">Stáhnout PDF kartu <span class="btn-icon"></span></a>
+                        </div>
+                        <div class="landsPopup__image">
+                            <img src="img/landsPopup/1.png" alt="">
+                        </div>
+                        <form class="landsPopup__form" action="#">
+                            <input class="landsPopup__form-input" type="text" name="name" placeholder="Vaše jméno" required>
+                            <input class="landsPopup__form-input" type="tel" name="tel" placeholder="Telefon" required>
+                            <input class="landsPopup__form-input" type="email" name="email" placeholder="E-mail" required>
+                            <textarea class="landsPopup__form-textarea" name="message" id="" placeholder="Zpráva"></textarea>
+                            <label class="landsPopup__form-agree custom-agree">
+                                <input type="checkbox" name="agree">
+                                <span>Mám zájem o Bungalov+</span>
+                            </label>
+                            <div class="landsPopup__form-bottom">
+                                <p class="landsPopup__form-processing">Odesláním souhlasím se zpracováním mých údajů</p>
+                                <button type="submit" class="landsPopup__form-btn btn">Odeslat <span class="btn-icon"></span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="container">
+					<div class="footer__inner">
+						<a class="footer__logo" href="index.html">
+							<img src="img/footer-logo.svg" alt="">
+							<img class="footer__logo-mobile" src="img/footer-logo-mobile.svg" alt="">
+						</a>
+						<div class="footer__info">
+							<a class="footer__info-link" href="tel:+420221907217">Tel: +420 221 907 217</a>
+							<a class="footer__info-link" href="mailto:office@spgroup.cz">office@spgroup.cz</a>
+						</div>
+						<div class="footer__socials">
+							<a href="#" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+									<path d="M3.80527 17H0.280804V5.64997H3.80527V17ZM2.04114 4.10172C0.914129 4.10172 0 3.16822 0 2.04118C8.06665e-09 1.49983 0.215048 0.980645 0.597836 0.597849C0.980623 0.215053 1.49979 0 2.04114 0C2.58248 0 3.10165 0.215053 3.48444 0.597849C3.86723 0.980645 4.08228 1.49983 4.08228 2.04118C4.08228 3.16822 3.16777 4.10172 2.04114 4.10172ZM16.9962 17H13.4793V11.4749C13.4793 10.1581 13.4528 8.46945 11.6469 8.46945C9.81446 8.46945 9.53366 9.90006 9.53366 11.38V17H6.01299V5.64997H9.39326V7.19822H9.44259C9.91312 6.30646 11.0625 5.36537 12.7773 5.36537C16.3443 5.36537 17 7.7143 17 10.7653V17H16.9962Z" fill="#53535A" />
+								</svg>
+							</a>
+							<a href="#" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+									<path d="M9.50212 4.62864C6.8063 4.62864 4.63185 6.80358 4.63185 9.5C4.63185 12.1964 6.8063 14.3714 9.50212 14.3714C12.1979 14.3714 14.3724 12.1964 14.3724 9.5C14.3724 6.80358 12.1979 4.62864 9.50212 4.62864ZM9.50212 12.667C7.76001 12.667 6.33581 11.2467 6.33581 9.5C6.33581 7.75326 7.75577 6.33298 9.50212 6.33298C11.2485 6.33298 12.6684 7.75326 12.6684 9.5C12.6684 11.2467 11.2442 12.667 9.50212 12.667ZM15.7076 4.42938C15.7076 5.06108 15.1989 5.5656 14.5716 5.5656C13.94 5.5656 13.4356 5.05684 13.4356 4.42938C13.4356 3.80191 13.9443 3.29315 14.5716 3.29315C15.1989 3.29315 15.7076 3.80191 15.7076 4.42938ZM18.9332 5.58256C18.8612 4.06053 18.5136 2.71232 17.3988 1.60153C16.2883 0.49074 14.9404 0.143088 13.4187 0.0667745C11.8504 -0.0222582 7.14964 -0.0222582 5.58132 0.0667745C4.06386 0.138849 2.71595 0.4865 1.60117 1.59729C0.486392 2.70808 0.143056 4.05629 0.0667596 5.57832C-0.0222532 7.14699 -0.0222532 11.8488 0.0667596 13.4174C0.138818 14.9395 0.486392 16.2877 1.60117 17.3985C2.71595 18.5093 4.05962 18.8569 5.58132 18.9332C7.14964 19.0223 11.8504 19.0223 13.4187 18.9332C14.9404 18.8612 16.2883 18.5135 17.3988 17.3985C18.5094 16.2877 18.8569 14.9395 18.9332 13.4174C19.0223 11.8488 19.0223 7.15123 18.9332 5.58256ZM16.9071 15.1006C16.5765 15.9316 15.9365 16.5717 15.1015 16.9067C13.851 17.4027 10.8839 17.2882 9.50212 17.2882C8.1203 17.2882 5.14897 17.3985 3.90279 16.9067C3.072 16.576 2.43196 15.9358 2.0971 15.1006C1.60117 13.8499 1.71562 10.8821 1.71562 9.5C1.71562 8.11787 1.60541 5.14588 2.0971 3.89942C2.42772 3.06845 3.06776 2.42826 3.90279 2.09333C5.15321 1.59729 8.1203 1.71176 9.50212 1.71176C10.8839 1.71176 13.8553 1.60153 15.1015 2.09333C15.9322 2.42402 16.5723 3.06421 16.9071 3.89942C17.4031 5.15012 17.2886 8.11787 17.2886 9.5C17.2886 10.8821 17.4031 13.8541 16.9071 15.1006Z" fill="#53535A" />
+								</svg>
+							</a>
+						</div>
+						<div class="footer__bottom">
+							<p class="footer__descr">SPGroup a. s. 2025</p>
+							<p class="footer__descr">Pacovská 2104/1, 140 00 Praha 4 – Krč</p>
+							<a class="footer__descr" href="privacy.html">Ochrana os. údajů</a>
+							<a class="footer__descr" href="terms.html">Obchodní podmínky</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
