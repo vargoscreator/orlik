@@ -1678,7 +1678,7 @@ a.footer__descr:hover::before{
     content: '';
     position: absolute;
     top: 0;
-    bottom: -154px;
+    bottom: 0;
     width: 100vw;
     background: rgba(227, 214, 205, 0.60);
     left: 50%;
