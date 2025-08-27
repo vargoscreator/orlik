@@ -585,12 +585,13 @@ textarea{
     top: 0;
     left: 0;
     right: 0;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3126' height='212' viewBox='0 0 3126 212' fill='none'%3E%3Cpath d='M1228.5 0.328952C1464.5 -2.26815 1549.83 11.1502 1563 18.184V211.5H0V0.328952C8.5 3.57534 319 31.4014 492.5 31.4014C687.5 31.4014 933.5 3.57533 1228.5 0.328952Z' fill='%2321565E'/%3E%3Cpath d='M1897.5 0.328952C1661.5 -2.26815 1576.17 11.1502 1563 18.184V211.5H3126V0.328952C3117.5 3.57534 2807 31.4014 2633.5 31.4014C2438.5 31.4014 2192.5 3.57533 1897.5 0.328952Z' fill='%2321565E'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='212' viewBox='0 0 1440 212' fill='none'%3E%3Cpath d='M1203.5 0.328952C1439.5 -2.26815 1524.83 11.1502 1538 18.184V211.5L-25 211.5V0.328952C-16.5 3.57534 294 31.4014 467.5 31.4014C662.5 31.4014 908.5 3.57533 1203.5 0.328952Z' fill='%2321565E'/%3E%3C/svg%3E");
     background-position: top center;
-    background-repeat: repeat-x;
-    width: calc(100% + 1563px);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 211px;
     z-index: -1;
+    width: 100%;
 }
 .footer__container{
     background-color: #21565E;
@@ -691,6 +692,19 @@ a.footer__descr:hover{
 a.footer__descr:hover::before{
     opacity: 0;
 }
+.footer__created{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #E3D6CD;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.132px;
+    margin-top: 40px;
+    text-align: center;
+}
 @media (max-width: 1279px) {
 
 }
@@ -716,9 +730,7 @@ a.footer__descr:hover::before{
         gap: 21px;
     }
     .footer::before{
-        background-image: url("data:image/svg+xml,%0A%3Csvg width='860' height='212' viewBox='0 0 860 212' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_11_1311)'%3E%3Cpath d='M167.976 31.4757C238.84 31.4757 328.237 3.58389 435.441 0.329837L435.441 212L-11.0003 212V0.329834C-7.91135 3.58389 104.926 31.4757 167.976 31.4757Z' fill='%2321565E'/%3E%3C/g%3E%3Cg clip-path='url(%23clip1_11_1311)'%3E%3Cpath d='M692.025 31.4758C621.162 31.4758 531.764 3.584 424.56 0.329952L424.559 212L871.002 212V0.329834C867.913 3.58389 755.076 31.4758 692.025 31.4758Z' fill='%2321565E'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_11_1311'%3E%3Crect width='430' height='212' fill='white'/%3E%3C/clipPath%3E%3CclipPath id='clip1_11_1311'%3E%3Crect width='430' height='212' fill='white' transform='matrix(-1 0 0 1 860 0)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
-        width: calc(100% + 430px);
-        height: 212px;
+        height: 100px;
         z-index: -1;
     }
 }
@@ -3102,7 +3114,7 @@ a.footer__descr:hover::before{
 .textBanner__image::after,
 .hero__content::after{
     content: '';
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4687' height='251' viewBox='0 0 4687 251' fill='none'%3E%3Cpath d='M1900 0.0927531C1664 -2.50435 1575.17 50.243 1562 57.2768V250.593H3125V39.4218C3116.5 42.6682 2811.5 82.0928 2638 82.0928C2443 82.0928 2195 3.33913 1900 0.0927531Z' fill='%23F8F3F0'/%3E%3Cpath d='M4349 0.0927531C4585 -2.50435 4673.83 50.243 4687 57.2768V250.593H3124V39.4218C3132.5 42.6682 3437.5 82.0928 3611 82.0928C3806 82.0928 4054 3.33913 4349 0.0927531Z' fill='%23F8F3F0'/%3E%3Cpath d='M1225 0.0927531C1461 -2.50435 1549.83 50.243 1563 57.2768V250.593H0V39.4218C8.5 42.6682 313.5 82.0928 487 82.0928C682 82.0928 930 3.33913 1225 0.0927531Z' fill='%23F8F3F0'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='252' viewBox='0 0 1440 252' fill='none'%3E%3Cpath d='M276 1C40 -1.5971 -48.8333 51.1503 -62 58.1841V251.5H1501V40.329C1492.5 43.5754 1187.5 83 1014 83C819 83 571 4.24638 276 1Z' fill='%23F8F3F0'/%3E%3C/svg%3E");
     position: absolute;
     background-repeat: repeat-x;
     height: 250px;
@@ -3293,11 +3305,6 @@ a.footer__descr:hover::before{
         bottom: 103px;
     }
 }
-@media (min-width: 768px) {
-    .hero__title br{
-        display: none;
-    }
-}
 @media (max-width: 767px) {
     .hero__title{
         font-size: 40px;
@@ -3387,21 +3394,24 @@ a.footer__descr:hover::before{
     margin: 50px auto 0;
 }
 .animate-vertical-wrapper {
-    display: inline-block;
-    position: relative;
-    height: 50px;
-    overflow: hidden;
-    vertical-align: middle;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+  transition: height 0.5s ease;
 }
+
 .animate-vertical {
-    display: inline-block;
-    animation: slide 6s infinite;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease;
 }
+
 .animate-vertical span {
-    display: block;
-    height: 50px;
-    line-height: 39px;
+  display: block;
+  text-align: center;
+  padding: 2px 0;
 }
+
 @keyframes slide {
     0%, 25% {
         transform: translateY(0);

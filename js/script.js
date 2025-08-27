@@ -271,3 +271,17 @@ if (document.querySelector('.animate-horizontal-wrapper')) {
     setInterval(showNextItem, 2000);
 }
 
+if (document.querySelector('.animate-vertical-wrapper')) {
+    const animationWrapper = document.querySelector('.animate-vertical-wrapper');
+    const itemsContainer = animationWrapper.querySelector('.animate-vertical');
+    const textItems = itemsContainer.querySelectorAll('span');
+    let activeIndex = 0;
+    function showNextItem() {
+        const currentItem = textItems[activeIndex];
+        animationWrapper.style.height = currentItem.offsetHeight + 'px';
+        itemsContainer.style.transform = `translateY(-${currentItem.offsetTop}px)`;
+        activeIndex = (activeIndex + 1) % textItems.length;
+    }
+    animationWrapper.style.height = textItems[0].offsetHeight + 'px';
+    setInterval(showNextItem, 2000);
+}
